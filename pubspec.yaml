@@ -1,0 +1,33 @@
+name: todo_app
+description: A clean architecture Todo application.
+publish_to: 'none' # Запрещает случайную публикацию пакета
+
+version: 1.0.0+1
+
+
+environment:
+  sdk: '^3.0.0' # Поддерживает любую версию Dart 3.x.x
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_bloc: ^8.1.3
+  
+  # Data Models (для сравнения объектов)
+  equatable: ^2.0.5
+  
+  # Network (вместо http)
+  dio: ^5.3.3
+  
+  # Dependency Injection
+  get_it: ^7.6.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Правила хорошего тона для кода
+
+flutter:
+  uses-material-design: true
